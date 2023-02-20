@@ -11,13 +11,13 @@ public class HelloController {
     // Dentro de la clase crear un método que retorne un saludo.
     // Probar que retorna el saludo desde el navegador y desde Postman.
 
-    @Value("${app.message}")
-    String message;
+    //@Value("${app.message}")
+    //String message;
 
 
     @GetMapping("/hola")
     public String saludar(){
-        System.out.println(message);
+        //System.out.println(message);
         return "hola openB. todo bien ?";
     }
 
